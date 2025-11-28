@@ -5,6 +5,8 @@ services:
       context: ..
       dockerfile: .devcontainer/Dockerfile
     command: sleep infinity
+    ports:
+      - 8000:8000
     env_file:
       - common.env
       - backend.env
